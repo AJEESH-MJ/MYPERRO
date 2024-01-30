@@ -1,2 +1,8 @@
 export { default as DogImage } from './dog-image.png'
 export { default as Background } from './pet-Background.jpg'
+export { default as CatGrooming } from './cat_grooming.jpg'
+export { default as PetPhotography } from './pet-photography.jpg'
+export { default as PetSpa } from './pet_spa.jpg'
+export { default as PetTraining } from './pet_training.jpg'
+export { default as PetSitting } from './pet_sitting.jpg'
+export { default as PetShop } from './pet-shop.jpg'

@@ -7,6 +7,7 @@ module.exports = {
         'bebas-neue': ['Bebas Neue', 'sans-serif'],
         'moon-dance': ['Moon Dance', 'cursive'],
         'poppins': ['Poppins', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
     },
   },
