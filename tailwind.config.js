@@ -1,8 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bebas-neue': ['Bebas Neue', 'sans-serif'],
+        'moon-dance': ['Moon Dance', 'cursive'],
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
+};
