@@ -65,21 +65,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className='bg-[#FBA806] text-white py-12'>
-        <div className='text-center'>
-          <h2 className='text-3xl font-bold mb-4'>Subscribe for Updates</h2>
-          <p className='text-lg mb-6'>Be the first to know about our launch and special promotions!</p>
-          <input
-            type='email'
-            placeholder='Your Email Address'
-            className='bg-white text-gray-800 px-4 py-2 rounded-md focus:outline-none'
-          />
-          <button className='ml-4 bg-gray-800 text-white px-6 py-2 rounded-md hover:bg-gray-700 focus:outline-none'>
-            Subscribe
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 };
