@@ -27,7 +27,7 @@ const ReviewsComponent = () => {
             </div>
           ))}
           <div className="relative top-8 flex items-center justify-center">
-            <button className="bg-[#FBA806] w-1/2 h-[53px] rounded-xl font-bebas-neue tracking-widest text-lg md:text-xl">
+            <button className="bg-[#FBA806] text-white w-1/2 h-[53px] rounded-xl font-bebas-neue tracking-widest text-lg md:text-xl">
               Rate Us
             </button>
           </div>

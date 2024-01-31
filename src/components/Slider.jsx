@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -14,28 +14,6 @@ import {
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 2 < items.length ? prevIndex + 2 : 0
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 2 >= 0 ? prevIndex - 2 : items.length - 2
-    );
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 6000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [currentIndex]);
 
   const items = [
     {
@@ -64,6 +42,28 @@ const Slider = () => {
       image: PetTraining,
     },
   ];
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 2 < items.length ? prevIndex + 2 : 0
+    );
+  }, [setCurrentIndex, items.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 2 >= 0 ? prevIndex - 2 : items.length - 2
+    );
+  }, [setCurrentIndex, items.length]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 6000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentIndex, nextSlide]);
 
   const sliceSize = window.innerWidth < 768 ? currentIndex + 1 : currentIndex + 2;
 

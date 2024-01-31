@@ -37,13 +37,13 @@ const Navbar = () => {
               Login
             </Link>
             <Link
-              to="/"
+              to="/about"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               About Us
             </Link>
             <Link
-              to="/"
+              to="/contact"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Contact Us
@@ -63,13 +63,13 @@ const Navbar = () => {
               Login
             </Link>
             <Link
-              to="/"
+              to="/about"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               About Us
             </Link>
             <Link
-              to="/"
+              to="/contact"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Contact Us

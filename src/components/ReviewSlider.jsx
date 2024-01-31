@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -9,29 +9,7 @@ import StarRating from "./StarRating";
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 < items.length ? prevIndex + 1 : 0
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 >= 0 ? prevIndex - 1 : items.length - 1
-    );
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 6000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [currentIndex]);
-
-  const items = [
+  const items = useMemo(() => [
     {
       name: "John Doe",
       testimonial:
@@ -62,7 +40,29 @@ const Slider = () => {
         "Anticipating the launch of the pet care company! Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
       rating: 4,
     },
-  ];
+  ], []);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 < items.length ? prevIndex + 1 : 0
+    );
+  }, [setCurrentIndex, items]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 >= 0 ? prevIndex - 1 : items.length - 1
+    );
+  }, [setCurrentIndex, items]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 6000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentIndex, nextSlide]);
 
   return (
     <div className="w-full flex justify-center">
