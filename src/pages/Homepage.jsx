@@ -66,7 +66,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="w-full h-[588px] flex justify-center items-center -mb-8">
+      <div className="w-full h-[588px] flex justify-center items-center -mt-16 -mb-14">
         <Slider />
       </div>
 
@@ -129,7 +129,7 @@ const Homepage = () => {
         </div>
       </div>
 
-     <Reviews />
+      <Reviews />
     </div>
   );
 };

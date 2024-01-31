@@ -11,6 +11,8 @@ const Navbar = () => {
     setShowMobileMenu(!showMobileMenu);
   };
 
+  const homeRoute = process.env.PUBLIC_URL;
+
   return (
     <nav className="bg-[#D9D9D9] h-[168.31] w-full">
       <div className="flex items-center justify-between">
@@ -29,19 +31,19 @@ const Navbar = () => {
         <div className="hidden sm:flex sm:justify-end sm:items-center sm:space-x-4 h-[94.31px] w-[681px] bg-[#EEEEEE]">
           <div className="mr-10 flex gap-8">
             <Link
-              to="/signin"
+              to={`${homeRoute}/signin`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Login
             </Link>
             <Link
-              to="/about"
+              to={`${homeRoute}/about`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               About Us
             </Link>
             <Link
-              to="/contact"
+              to={`${homeRoute}/contact`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Contact Us
@@ -55,19 +57,19 @@ const Navbar = () => {
         <div className="lg:hidden">
           <div className="flex justify-center items-center gap-8 bg-[#C3C3C3] pt-6">
             <Link
-              to="/signin"
+              to={`${homeRoute}/signin`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Login
             </Link>
             <Link
-              to="/about"
+              to={`${homeRoute}/about`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               About Us
             </Link>
             <Link
-              to="/contact"
+              to={`${homeRoute}/contact`}
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Contact Us
