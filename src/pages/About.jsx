@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { SocialIcons } from "../components";
 
 const AboutUsPage = () => {
+  const homeRoute = process.env.PUBLIC_URL;
+
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-4xl font-bold mb-6 text-center font-bebas-neue tracking-widest">
@@ -92,10 +94,13 @@ const AboutUsPage = () => {
         this pet care journey with you and your furry companions!
       </p>
       <div className="mt-8">
-          <Link to="/" className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none">
-            Back to Home
-          </Link>
-        </div>
+        <Link
+          to={`${homeRoute}/`}
+          className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none"
+        >
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 };

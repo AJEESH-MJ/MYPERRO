@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  const homeRoute = process.env.PUBLIC_URL;
   return (
     <div className="flex flex-col justify-center items-center h-[75vh]">
       <form className="bg-[#FFF5DC] p-10 rounded-xl w-2/3 md:w-1/3">
@@ -39,11 +40,11 @@ const SignIn = () => {
           />
         </div>
         <div className="flex items-center justify-between">
-        <button className="bg-gray-900 font-bebas-neue tracking-widest text-white px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none">
+          <button className="bg-gray-900 font-bebas-neue tracking-widest text-white px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none">
             Sign In
           </button>
           <Link
-            to="/signup"
+            to={`${homeRoute}/signup`}
             className="inline-block align-baseline font-bold font-montserrat text-sm text-[#FBA806] ml-2 md:ml-0"
           >
             Don't have an account? Sign Up!
@@ -51,13 +52,13 @@ const SignIn = () => {
         </div>
       </form>
       <div className="mt-20">
-          <Link
-            to="/"
-            className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none"
-          >
-            Back to Home
-          </Link>
-        </div>
+        <Link
+          to={`${homeRoute}/signin`}
+          className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none"
+        >
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 };

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { SocialIcons } from "../components";
 
 const ContactUsPage = () => {
+  const homeRoute = process.env.PUBLIC_URL;
+
   return (
     <div className="container mx-auto p-8">
       <div className="w-full flex flex-col lg:flex-row">
@@ -97,7 +99,7 @@ const ContactUsPage = () => {
         </p>
         <div className="mt-8">
           <Link
-            to="/"
+            to={`${homeRoute}/`}
             className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none"
           >
             Back to Home
