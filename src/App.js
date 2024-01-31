@@ -11,10 +11,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path={`${homeRoute}/`} element={<Homepage />} />
-        <Route path={`${homeRoute}/about`} element={<About />} />
-        <Route path={`${homeRoute}/contact`} element={<Contact />} />
-        <Route path={`${homeRoute}/signin`} element={<SignIn />} />
-        <Route path={`${homeRoute}/signup`} element={<SignUp />} />
+        <Route path={'/about'} element={<About />} />
+        <Route path={'/contact'} element={<Contact />} />
+        <Route path={'/signin'} element={<SignIn />} />
+        <Route path={'/signup'} element={<SignUp />} />
       </Routes>
       <Footer />
     </div>
