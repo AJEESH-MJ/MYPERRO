@@ -1,6 +1,6 @@
 import React from "react";
 import { Background, DogImage, PetShop } from "../assets/index";
-import { Slider, SocialIcons } from "../components";
+import { Reviews, Slider, SocialIcons } from "../components";
 
 const Homepage = () => {
   return (
@@ -71,7 +71,7 @@ const Homepage = () => {
       </div>
 
       <div class="flex items-center justify-center mb-20">
-        <div class="bg-[#EEEEEEEE] w-full sm:w-full md:w-[80%] lg:w-[90%] rounded-xl flex">
+        <div class="bg-[#FFF5DC] w-full sm:w-full md:w-[80%] lg:w-[90%] rounded-xl flex">
           <div class="w-full md:w-1/2 p-6 ml-10 mt-14">
             <h3 class="text-left text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-[#333333] font-poppins">
               Dog Training
@@ -94,25 +94,29 @@ const Homepage = () => {
       </div>
 
       <div class="flex items-center justify-center mb-20">
-        <div class="bg-[#EEEEEEEE] w-full sm:w-full md:w-[80%] lg:w-[90%] h-full rounded-xl flex">
+        <div class="bg-[#FFF5DC] w-full sm:w-full md:w-[80%] lg:w-[90%] h-full rounded-xl flex">
           <div class="w-full text-left md:w-1/2 p-6 ml-10">
             <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-[#333333] font-poppins">
               About Us
             </h3>
             <div className="text-xl text-gray-600 font-montserrat mb-4">
-            <p>
-          Welcome to our pet care-centric world! We are a dedicated team passionate about providing top-notch services for your beloved pets.
-        </p>
-        <p>
-          Our mission is to create a harmonious and joyful environment for pets, ensuring their well-being and happiness.
-        </p>
-        <p>
-          Stay tuned as we prepare to unveil a range of services that will redefine pet care experiences.
-        </p>
-        </div>
-        <button className="w-full sm:w-[132.57px] h-[55px] bg-[#1E1E1E] text-white font-bebas-neue tracking-widest px-2 mt-4 sm:mt-0 sm:px-4 py-1 sm:py-2 flex justify-center items-center rounded-full hover:bg-[#FF9800] focus:outline-none">
-                    Know More
-                  </button>
+              <p>
+                Welcome to our pet care-centric world! We are a dedicated team
+                passionate about providing top-notch services for your beloved
+                pets.
+              </p>
+              <p>
+                Our mission is to create a harmonious and joyful environment for
+                pets, ensuring their well-being and happiness.
+              </p>
+              <p>
+                Stay tuned as we prepare to unveil a range of services that will
+                redefine pet care experiences.
+              </p>
+            </div>
+            <button className="flex justify-center items-center w-2/3 sm:w-[132.57px] h-[55px] bg-[#1E1E1E] text-white font-bebas-neue tracking-widest px-2 mt-4 sm:mt-0 sm:px-4 py-1 sm:py-2 rounded-xl hover:bg-[#FF9800] focus:outline-none">
+              Know More
+            </button>
           </div>
 
           <div class="hidden sm:flex w-full sm:w-1/2 h-[400px]">
@@ -125,6 +129,7 @@ const Homepage = () => {
         </div>
       </div>
 
+     <Reviews />
     </div>
   );
 };
