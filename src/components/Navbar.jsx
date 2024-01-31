@@ -20,18 +20,16 @@ const Navbar = () => {
           </h1>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="sm:hidden">
           <button onClick={toggleMobileMenu} className="flex mr-10">
             <FontAwesomeIcon icon={faBars} size="2xl" />
           </button>
         </div>
 
-        {/* Desktop Links */}
         <div className="hidden sm:flex sm:justify-end sm:items-center sm:space-x-4 h-[94.31px] w-[681px] bg-[#EEEEEE]">
           <div className="mr-10 flex gap-8">
             <Link
-              to="/"
+              to="/signin"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Login
@@ -57,7 +55,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <div className="flex justify-center items-center gap-8 bg-[#C3C3C3] pt-6">
             <Link
-              to="/"
+              to="/signin"
               className="text-[#1E1E1E] font-poppins text-[25px] font-normal leading-5 tracking-normal hover:text-[#FBA806]"
             >
               Login

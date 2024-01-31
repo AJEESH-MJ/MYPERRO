@@ -18,7 +18,7 @@ const AboutUsPage = () => {
         into what we have in store for you and your beloved pets.
       </p>
       <p className="text-lg mb-4 font-poppins">
-        At{" "}
+        At
         <span className="font-bebas-neue tracking-widest text-[#FBA806] text-2xl font-semibold">
           MYPERRO
         </span>
@@ -91,14 +91,11 @@ const AboutUsPage = () => {
         Thank you for your patience and excitement. We can't wait to embark on
         this pet care journey with you and your furry companions!
       </p>
-      <div className="mt-8 text-center">
-        <Link
-          to="/contact"
-          className="bg-blue-500 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline-blue"
-        >
-          Contact Us
-        </Link>
-      </div>
+      <div className="mt-8">
+          <Link to="/" className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none">
+            Back to Home
+          </Link>
+        </div>
     </div>
   );
 };

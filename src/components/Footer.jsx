@@ -36,7 +36,9 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center mt-8 text-gray-500">
-        &copy; 2024 Your Company. All rights reserved.
+        &copy; 2024 <span className="font-bebas-neue tracking-widest text-[#FBA806] text-xl font-semibold">
+          MYPERRO.
+        </span> All rights reserved.
       </p>
     </footer>
   );
