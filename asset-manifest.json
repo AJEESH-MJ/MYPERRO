@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MYPERRO/static/css/main.2cf6a960.css",
-    "main.js": "/MYPERRO/static/js/main.f200e46e.js",
+    "main.js": "/MYPERRO/static/js/main.fd19e5ba.js",
     "static/media/pet_spa.jpg": "/MYPERRO/static/media/pet_spa.260216de528ea05c646f.jpg",
     "static/media/pet-photography.jpg": "/MYPERRO/static/media/pet-photography.f71acbd5ea88bb660278.jpg",
     "static/media/cat_grooming.jpg": "/MYPERRO/static/media/cat_grooming.9f9f2095d6b25ab9cb65.jpg",
@@ -13,10 +13,10 @@
     "static/media/double-quotes.png": "/MYPERRO/static/media/double-quotes.abc2bbd1f7c3383403ee.png",
     "index.html": "/MYPERRO/index.html",
     "main.2cf6a960.css.map": "/MYPERRO/static/css/main.2cf6a960.css.map",
-    "main.f200e46e.js.map": "/MYPERRO/static/js/main.f200e46e.js.map"
+    "main.fd19e5ba.js.map": "/MYPERRO/static/js/main.fd19e5ba.js.map"
   },
   "entrypoints": [
     "static/css/main.2cf6a960.css",
-    "static/js/main.f200e46e.js"
+    "static/js/main.fd19e5ba.js"
   ]
 }
