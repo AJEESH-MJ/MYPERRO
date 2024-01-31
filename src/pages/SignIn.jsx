@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
-    <div className="flex justify-center items-center h-[75vh]">
+    <div className="flex flex-col justify-center items-center h-[75vh]">
       <form className="bg-[#FFF5DC] p-10 rounded-xl w-2/3 md:w-1/3">
         <h1 className="mb-4 mt-0">
           <span className="text-4xl font-bold font-bebas-neue tracking-widest">
@@ -50,6 +50,14 @@ const SignIn = () => {
           </Link>
         </div>
       </form>
+      <div className="mt-20">
+          <Link
+            to="/"
+            className="bg-gray-900 font-bebas-neue tracking-widest text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#000000] focus:outline-none"
+          >
+            Back to Home
+          </Link>
+        </div>
     </div>
   );
 };
